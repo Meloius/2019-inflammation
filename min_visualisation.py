@@ -5,8 +5,10 @@ data = np.loadtxt(
    fname='data/inflammation-01.csv',
    delimiter=','
 )
-ave_inflammation = np.meam(
-    data,
-    axis=0
+
+min_inflammation = np.min(
+   data,
+   axis=0
 )
-ave_plot = plt.plot(ave_inflammation)
+
+min_plot = plt.plot(min_inflammation)
